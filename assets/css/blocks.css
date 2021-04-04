@@ -20,6 +20,11 @@ body {
 .fw-bold {
   font-family: Alselm-bold;
 }
+.section-title {
+  font-family: Alselm-bold;
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
 /*/ Secondary */
 
 /* Button */
@@ -91,3 +96,80 @@ body {
   color: #000;
 }
 /*/ Select */
+
+/* Decision */
+.decision .section-title {
+  max-width: 61rem;
+}
+.decision__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decision__info {
+  margin-right: 5rem;
+}
+
+.decision__about-list {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.decision__about-item {
+  display: flex;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  align-items: center;
+}
+.decision__about-item-icon {
+  min-width: 10rem;
+  min-height: 10rem;
+  background-image: url(../images/icons/computer-mail-purse.png);
+  background-position: center 0px;
+}
+.decision__about-item-icon-1 {
+  background-position-y: 0;
+}
+.decision__about-item-icon-2 {
+  background-position-y: -12.5rem;
+}
+.decision__about-item-icon-3 {
+  background-position-y: -25rem;
+}
+
+.decision__companies {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decision__img {
+  position: relative;
+}
+.decision__img img {
+  position: relative;
+  z-index: 2;
+}
+.decision__img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 81.5rem;
+  height: 81.5rem;
+  top: -50%;
+  right: -57%;
+  background: #B0DEEE;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1;
+  transform: translateY(10%);
+  -webkit-transform: translateY(10%);
+  -moz-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  -o-transform: translateY(10%);
+}
+/*/ Decision */
