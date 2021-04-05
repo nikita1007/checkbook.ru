@@ -19,6 +19,7 @@
 }
 .header__top-inner {
   display: flex;
+  align-items: center;
   position: relative;
   z-index: 100;
 }
