@@ -69,3 +69,5 @@ function menuToggle() {
       }
     })
 }
+
+document.querySelector('.decision__img').style.cssText = `height: ${document.querySelector('.decision__img img').clientHeight}px`
