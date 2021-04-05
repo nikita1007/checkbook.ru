@@ -183,7 +183,6 @@ body {
   position: relative;
 }
 .decision__img img {
-  position: relative;
   z-index: 2;
 }
 .decision__img::before {
