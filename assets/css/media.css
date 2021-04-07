@@ -14,12 +14,12 @@
     justify-content: space-between;
   }
 
-  .nav-menu {
+  .header .nav-menu {
     display: block;
     right: 0;
   }
 
-  .nav {
+  .header .nav {
     width: 50vw;
     height: 100vh;
     position: fixed;
@@ -33,13 +33,13 @@
     background-color: rgba(0,0,0, .9);
     backdrop-filter: blur(5px);
 }
-  .nav__inner {
+  .header .nav__inner {
     flex-direction: column;
   }
-  .nav__item {
+  .header .nav__item {
     margin: 1rem auto !important;
   }
-  .nav__item a {
+  .header .nav__item a {
     font-size: 1.8rem;
   }
   /*/ Header */
@@ -141,7 +141,71 @@
         color: rgba(176, 222, 238, 0.39);
       }
     /*/ How Its work */
+    /* Free Test */
+      .free-test__info {
+        width: 100%;
+      }
+      .free-test__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .free-test__stroke-input {
+        min-width: unset;
+      }
+      .free-test__img {
+        display: none;
+      }
+    /*/ Free Test */
+    /* DataBase */
+      .database::after {
+        content: '';
+        position: absolute;
+        top: -10%;
+        right: -100%;
+        width: 125rem;
+        height: 125rem;
+      }
+      .database__imgs,
+      .database__img {
+        display: block;
+        top: unset !important;
+        left: unset !important;
+        position: relative;
+      }
+      .database__inner {
+        flex-direction: column;
+      }
+      .database__img {
+        max-height: 40rem;
+        display: flex;
+        justify-content: center;
+      }
+      .database__img img {
+        width: auto;
+        height: 100%;
+      }
+      .database__img:nth-child(2) {
+        margin-top: -10rem;
+      }
+    /*/ DataBase */
   /*/ Main */
+
+  /* Footer */
+    .footer__inner {
+      flex-direction: column;
+    }
+    .footer .nav {
+      margin: 2.5rem 0;
+    }
+    .footer .nav .nav__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer .nav .nav__inner .nav__item {
+      margin: 0.5rem 0;
+    }
+  /*/ Footer */
 }
 @media (max-width: 768px) {
   /* Secondary */
@@ -152,7 +216,7 @@
   /*/ Secondary */
 
   /* Header */
-  .nav {
+  .header .nav {
     width: 60vw;
   }
   /*/ Header */
@@ -304,6 +368,66 @@
         color: rgba(176, 222, 238, 0.39);
       }
     /*/ How Its work */
+    /* Price */
+      .price .section-title__background {
+        display: none;
+      }
+      .price__img-wrap {
+        display: none;
+      }
+    /*/ Price */
+    /* Free Test */
+      .free-test {
+        margin-top: 8rem;
+      }
+    /*/ Free Test */
+    /* DataBase */
+      .database {
+        padding-bottom: 10rem;
+      }
+      .database .section-title__background {
+        display: none;
+      }
+      .database::after {
+        display: none;
+      }
+      .database__list {
+        margin-top: 2rem;
+      }
+      .database__img img {
+        width: 100%;
+      }
+      .database__img:last-child {
+        margin-top: -10%;
+        margin-left: -5%;
+      }
+      .database__img:last-child img {
+        transform: scale(1.35);
+        -webkit-transform: scale(1.35);
+        -moz-transform: scale(1.35);
+        -ms-transform: scale(1.35);
+        -o-transform: scale(1.35);
+      }
+    /*/ DataBase */
+    /* Location */
+      .location {
+        background-position-x: 60%;
+      }
+
+      .location .section-title * {
+        position: relative;
+        z-index: 5;
+      }
+      .location .section-subtitle {
+        margin-top: 1.5rem;
+        max-width: 51rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      .section-title__background {
+        display: none;
+      }
+    /*/ Location */
   /*/ Main */
 }
 @media (max-width: 550px) {
@@ -337,7 +461,7 @@
     width: 120%;
   }
 
-  .nav {
+  .header .nav {
     width: 75vw;
   }
   /*/ Header */
@@ -410,11 +534,57 @@
         left: 0;
       }
     /*/ How Its Work */
+    /* Price */
+      .price__list {
+        grid-template-columns: repeat(1, 1fr);  
+      }
+      .price__subtitle {
+        margin: 3.5rem 0 3rem;
+      }
+      .price__list-item-img {
+        min-width: 7rem;
+        min-height: 7rem;
+        width: 7rem;
+        height: 7rem;
+      }
+    /*/ Price */
+    /* Free Test */
+      .message-free-test__img {
+        display: none;
+      }
+      .message-free-test__title img {
+        display: block;
+        float: left;
+        margin-right: 1rem;
+      }
+      .message-free-test__title {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+      }
+      .message-free-test__text {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+    /*/ Free Test */
+    /* DataBase */
+      .database {
+        padding-bottom: 5rem;
+      }
+      .database__list {
+        margin-top: 2rem;
+      }
+      .database__list-item-img {
+        min-width: 7.5rem; 
+        min-height: 7.5rem;
+        background-size: contain; 
+      }
+    /*/ DataBase */
   /*/ Main */
 }
 @media (max-width: 425px) {
   /* Header */
-  .nav {
+  .header .nav {
     width: 100vw;
   }
 
@@ -481,6 +651,26 @@
         line-height: 2.2rem;
       }
     /*/ How Its Work */
+    /* Free Test */
+      .message-free-test__title img {
+        max-height: 7rem;
+      }
+      .message-free-test__title {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+      }
+      .message-free-test__text {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    /*/ Free Test */
+    /* DataBase */
+      .database__list-item-text {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+      }
+    /*/ DataBase */
   /*/ Main */
 }
 @media (max-width: 375px) {
@@ -501,7 +691,7 @@
     height: auto;
     padding: 16rem 0 18rem;
   }
-  .nav {
+  .header .nav {
     width: 100vw;
   }
   /*/ Header */
@@ -547,6 +737,23 @@
         line-height: 9rem;
       }
     /*/ How Its Work */
+    /* Free Test */
+      .message-free-test__title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      .message-free-test__text {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+    /*/ Free Test */
+    /* DataBase */
+      .database__list-item-text {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+    /*/ DataBase */
   /*/ Main */
 }
 @media (max-width: 321px) {
@@ -557,7 +764,7 @@
   /*/ Secondary */
   
   /* Header */
-  .nav {
+  .header .nav {
     width: 100vw;
   }
   /*/ Header */
@@ -606,5 +813,11 @@
         line-height: 2rem;
       }
     /*/ How Its Work */
+    /* Free Test */
+      .message-free-test__title {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+    /*/ Free Test */
   /*/ Main */
 }
