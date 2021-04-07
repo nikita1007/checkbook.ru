@@ -17,13 +17,28 @@ body {
 /*/ Primary */
 
 /* Secondary */
+.p-text {
+  font-size: 3rem;
+}
+.textw-reg {
+  font-family: Alselm;
+}
+.textw-med {
+  font-family: Alselm-medium;
+}
 .fw-bold {
   font-family: Alselm-bold;
 }
-.section-title {
+.section-title__text {
   font-family: Alselm-bold;
   font-size: 4rem;
   line-height: 5.2rem;
+}
+.section-title__background {
+  position: absolute;
+}
+.section-title {
+  position: relative;
 }
 /*/ Secondary */
 
@@ -125,15 +140,17 @@ body {
   background-color: transparent;
   color: #fff;
   font-size: 1.5rem;
+  font-family: Alselm;
 }
 #countries option {
   display: inline-block;
   color: #000;
+  font-family: Alselm;
 }
 /*/ Select */
 
 /* Decision */
-.decision .section-title {
+.decision .section-title__text {
   max-width: 61rem;
 }
 .decision__inner {
@@ -208,3 +225,49 @@ body {
   -o-transform: translateY(10%);
 }
 /*/ Decision */
+
+/* Instrument */
+.instrument {
+  margin-top: 15rem;
+}
+.instrument * {
+  z-index: 5;
+}
+
+.instrument .section-title {
+  max-width: 100rem;
+}
+.instrument .section-title .section-title__background {
+  left: -21%;
+  z-index: 1;
+}
+
+.instrument__inner {
+  display: flex;
+}
+.instrument__info {
+  display: flex;
+  margin-top: 10rem;
+}
+.instrument__info-img {
+  width: 8rem;
+  height: 8.5rem;
+  margin-right: 2rem;
+}
+.instrument__info-text {
+  max-width: 66rem;
+  line-height: 4rem;
+}
+
+.instrument__img-wrap {
+  width: 35%;
+}
+.instrument__img {
+  display: block;
+  transform: translate(-12%, -15%);
+  -webkit-transform: translate(-12%, -15%);
+  -moz-transform: translate(-12%, -15%);
+  -ms-transform: translate(-12%, -15%);
+  -o-transform: translate(-12%, -15%);
+}
+/*/ Instrument */
