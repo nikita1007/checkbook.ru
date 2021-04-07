@@ -271,3 +271,86 @@ body {
   -o-transform: translate(-12%, -15%);
 }
 /*/ Instrument */
+
+/* How Its work */
+.how-its-work {
+  margin-top: 3rem;
+}
+.how-its-work__integration {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.how-its-work__integration-text {
+  font-size: 4rem;
+}
+.how-its-work__integration-imgs {
+  display: flex;
+  align-items: center;
+}
+.how-its-work__integration-img {
+  margin: 0 1.5rem;
+}
+
+.how-its-work__imgs {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.how-its-work__imgs img {
+  width: 100%;
+}
+.how-its-work__imgs img:first-child {
+  margin-right: 1rem;
+}
+.how-its-work__imgs img:last-child {
+  margin-left: 1rem;
+}
+
+.how-its-work__checkpoints {
+  margin-top: 16rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.how-its-work__checkpoint {
+  margin: 1rem;
+  position: relative;
+}
+
+.how-its-work__checkpoint:nth-child(4) {
+  display: flex;
+  margin: 1rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+.how-its-work__checkpoint:nth-child(4) .how-its-work__checkpoint-count {
+  top: -15rem;
+}
+
+.how-its-work__checkpoint * {
+  z-index: 5;
+  position: relative;
+}
+.how-its-work__checkpoint p {
+  line-height: 4.2rem;
+}
+.how-its-work__checkpoint-count {
+  font-size: 30rem;
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+  z-index: 1;
+  top: -19rem;
+  left: -5rem;
+  color: rgba(176, 222, 238, 0.39);
+}
+
+.how-its-work__checkpoint .marker-text {
+  margin: 5rem 0;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: rgba(0, 0, 0, 0.28);
+}
+/*/ How Its work */

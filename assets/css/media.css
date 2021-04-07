@@ -45,25 +45,102 @@
   /*/ Header */
 
    /* Main */
-  .decision__img-wrap img {
-    transform: translateX(-10%) scale(.9);
-    -webkit-transform: translateX(-10%) scale(.9);
-    -moz-transform: translateX(-10%) scale(.9);
-    -ms-transform: translateX(-10%) scale(.9);
-    -o-transform: translateX(-10%) scale(.9);
-  }
-  .decision__img-wrap::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-  }
+    /* Decision */
+      .decision__img-wrap img {
+        transform: translateX(-10%) scale(.9);
+        -webkit-transform: translateX(-10%) scale(.9);
+        -moz-transform: translateX(-10%) scale(.9);
+        -ms-transform: translateX(-10%) scale(.9);
+        -o-transform: translateX(-10%) scale(.9);
+      }
+      .decision__img-wrap::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+    /*/ Decision */
+    /* Instrument */
+      .instrument__img {
+        transform: translate(-5%, -15%);
+        -webkit-transform: translate(-5%, -15%);
+        -moz-transform: translate(-5%, -15%);
+        -ms-transform: translate(-5%, -15%);
+        -o-transform: translate(-5%, -15%);
+}
+    /*/ Instrument */
+    /* How Its work */
+      .how-its-work__integration-text {
+        font-size: 3.4rem;
+      }
+      .how-its-work__integration-img {
+        margin: 0 1rem;
+      }
+
+      .how-its-work {
+        margin-top: 3rem;
+      }
+      .how-its-work__integration {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .how-its-work__integration-text {
+        font-size: 4rem;
+      }
+      .how-its-work__integration-imgs {
+        display: flex;
+        align-items: center;
+      }
+      .how-its-work__integration-img {
+        margin: 0 1.5rem;
+      }
+
+      .how-its-work__imgs {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .how-its-work__imgs img {
+        width: 100%;
+      }
+      .how-its-work__imgs img:first-child {
+        margin-right: 1rem;
+      }
+      .how-its-work__imgs img:last-child {
+        margin-left: 1rem;
+      }
+
+      .how-its-work__checkpoints {
+        margin-top: 16rem;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      }
+      .how-its-work__checkpoint-img {
+        width: 100%;
+      }
+
+      .how-its-work__checkpoint:nth-child(4) .how-its-work__checkpoint-count {
+        top: 3rem;
+      }
+      .how-its-work__checkpoint-count {
+        font-size: 26rem;
+        position: absolute;
+        font-family: Arial;
+        font-weight: bold;
+        z-index: 1;
+        top: -15rem;
+        left: -3rem;
+        color: rgba(176, 222, 238, 0.39);
+      }
+    /*/ How Its work */
   /*/ Main */
 }
 @media (max-width: 768px) {
@@ -142,6 +219,9 @@
       .instrument {
         margin-top: 8rem;
       }
+      .instrument .section-title .section-title__background {
+        display: none;
+      }
       .instrument__inner {
         flex-direction: column;
       }
@@ -170,6 +250,60 @@
         width: 100%;
       }
     /*/ Instrument */
+    /* How Its work */
+      .how-its-work__integration {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .how-its-work__integration-imgs {
+        align-self: center;
+        margin-top: 2.5rem;
+      }
+      .how-its-work__imgs {
+        margin-top: 2.5rem;
+      }
+      .how-its-work__integration-text {
+        font-size: 3.4rem;
+      }
+      .how-its-work__integration-img {
+        margin: 0 1rem;
+      }
+
+      .how-its-work__checkpoints {
+        margin-top: 10rem;
+      }
+
+      .how-its-work__checkpoint:nth-child(4) {
+        display: flex;
+        margin: 1rem;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .how-its-work__checkpoint:nth-child(4) .how-its-work__checkpoint-count {
+        top: -13rem;
+      }
+      .how-its-work__checkpoint p {
+        line-height: 3rem;
+        font-size: 2.2rem;
+      }
+      .how-its-work__checkpoint .marker-text {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        margin: 2.5rem 0;
+      }
+      .how-its-work__checkpoint-count {
+        font-size: 26rem;
+        position: absolute;
+        font-family: Arial;
+        font-weight: bold;
+        z-index: 1;
+        top: -15rem;
+        left: -3rem;
+        color: rgba(176, 222, 238, 0.39);
+      }
+    /*/ How Its work */
   /*/ Main */
 }
 @media (max-width: 550px) {
@@ -229,14 +363,6 @@
       .instrument {
         margin-top: 5rem;
       }
-      .instrument .section-title .section-title__background {
-        top: -20%;
-        transform: scale(.8);
-        -webkit-transform: scale(.8);
-        -moz-transform: scale(.8);
-        -ms-transform: scale(.8);
-        -o-transform: scale(.8);
-      }
       .instrument__info-text {
         font-size: 2.5rem;
         line-height: 3.5rem;
@@ -246,6 +372,44 @@
         height: auto;
       }
     /*/ Instrument */
+    /* How Its Work */
+      .how-its-work__integration {
+        margin-top: 2rem;
+      }
+      .how-its-work__integration-text {
+        font-size: 2.8rem;
+      }
+      
+      .how-its-work__checkpoints {
+        margin-top: 5rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .how-its-work__checkpoint {
+        display: flex;
+        align-items: flex-end;
+        margin: 1rem 0;
+      }
+      .how-its-work__checkpoint div {
+        display: flex;
+        align-items: flex-end;
+      }
+      .how-its-work__checkpoint .btn {
+        width: 100%;
+      }
+      .how-its-work__checkpoint-count {
+        position: relative;
+        top: 0;
+        left: 0;
+        line-height: 20rem;
+      }
+      .how-its-work__checkpoint p {
+        font-size: 2rem;
+      }
+      .how-its-work__checkpoint:nth-child(4) .how-its-work__checkpoint-count {
+        top: inherit;
+        left: 0;
+      }
+    /*/ How Its Work */
   /*/ Main */
 }
 @media (max-width: 425px) {
@@ -279,15 +443,6 @@
       }
     /*/ Decision */
     /* Instrument */
-      .instrument .section-title .section-title__background {
-        top: -15%;
-        left: -30%;
-        transform: scale(.75);
-        -webkit-transform: scale(.75);
-        -moz-transform: scale(.75);
-        -ms-transform: scale(.75);
-        -o-transform: scale(.75);
-      }
       .instrument__info-text {
         font-size: 2.3rem;
         line-height: 3.2rem;
@@ -297,6 +452,35 @@
         height: auto;
       }
     /*/ Instrument */
+    /* How Its Work */
+      .how-its-work__integration {
+        margin-top: 2rem;
+      }
+      .how-its-work__integration-text {
+        font-size: 2.5rem;
+      }
+      .how-its-work__imgs {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .how-its-work__imgs img {
+        margin: 0 !important;
+      }
+      .how-its-work__integration-img img {
+        width: 100%;
+      }
+      
+      .how-its-work__checkpoint-count {
+        font-size: 20rem;
+        line-height: 15rem;
+      }
+      .how-its-work__checkpoint {
+        margin: 1.5rem 0;
+      }
+      .how-its-work__checkpoint p {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+    /*/ How Its Work */
   /*/ Main */
 }
 @media (max-width: 375px) {
@@ -343,15 +527,6 @@
       }
     /*/ Decision */
     /* Instrument */
-      .instrument .section-title .section-title__background {
-        top: -25%;
-        left: -35%;
-        transform: scale(.7);
-        -webkit-transform: scale(.7);
-        -moz-transform: scale(.7);
-        -ms-transform: scale(.7);
-        -o-transform: scale(.7);
-      }
       .instrument__info-text {
         font-size: 2.2rem;
         line-height: 3.2rem;
@@ -361,6 +536,17 @@
         height: auto;
       }
     /*/ Instrument */
+    /* How Its Work */
+      .how-its-work__checkpoint,
+      .how-its-work__checkpoint div {
+        display: block;
+      }
+      .how-its-work__checkpoint-count {
+        float: left;
+        font-size: 15rem;
+        line-height: 9rem;
+      }
+    /*/ How Its Work */
   /*/ Main */
 }
 @media (max-width: 321px) {
@@ -400,15 +586,6 @@
       }
     /*/ Decision */
     /* Instrument */
-      .instrument .section-title .section-title__background {
-        top: -22%;
-        left: -40%;
-        transform: scale(.65);
-        -webkit-transform: scale(.65);
-        -moz-transform: scale(.65);
-        -ms-transform: scale(.65);
-        -o-transform: scale(.65);
-      }
       .instrument__info-text {
         font-size: 2rem;
         line-height: 3rem;
@@ -418,5 +595,16 @@
         height: auto;
       }
     /*/ Instrument */
+    /* How Its Work */
+      .how-its-work__checkpoint .btn {
+        width: unset !important;
+        align-self: flex-start;
+      }
+      .how-its-work__checkpoint .marker-text {
+        margin: 2rem 0;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    /*/ How Its Work */
   /*/ Main */
 }
