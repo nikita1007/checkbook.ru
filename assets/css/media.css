@@ -195,6 +195,9 @@
     .footer__inner {
       flex-direction: column;
     }
+    .footer .site-logo {
+      margin-right: 0;
+    }
     .footer .nav {
       margin: 2.5rem 0;
     }

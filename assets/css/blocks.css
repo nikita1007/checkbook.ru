@@ -876,6 +876,9 @@ p.price__list-item-text {
   margin-top: auto;
   background: #2E2E2E;
 }
+.footer .site-logo {
+  margin-right: 2rem;
+}
 .footer .nav {
   width: 80%;
   display: block !important;
