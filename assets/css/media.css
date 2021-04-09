@@ -42,6 +42,13 @@
   .header .nav__item a {
     font-size: 1.8rem;
   }
+
+  .nav-menu-desc {
+    display: none;
+  }
+  #countries {
+    display: block;
+  }
   /*/ Header */
 
    /* Main */
@@ -708,6 +715,9 @@
         min-height: 7rem;
         width: 7rem;
         height: 7rem;
+      }
+      .price__info-btn {
+        margin-top: 3rem;
       }
     /*/ Price */
     /* Free Test */
