@@ -1,5 +1,6 @@
 function main() { 
   menuToggle()
+  popup()
 } main()
 
 // Menu Toggle
@@ -68,4 +69,20 @@ function menuToggle() {
         }, 300);
       }
     })
+}
+
+// Popup
+function popup() {
+  const popupOpenBtns = document.querySelectorAll('.btn-popup-open'),
+        popupCloseBtn = document.querySelector('.close-popup'),
+        popupWrap     = document.querySelector('.popup-wrap')
+
+  popupOpenBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      popupWrap.style.cssText = `display: block;`
+    })
+  })
+  popupCloseBtn.addEventListener('click', () => {
+    popupWrap.style.cssText = `display: none;`
+  })
 }
