@@ -837,12 +837,19 @@
       min-width: unset;
       width: 100%;
       height: 100vh;
-      padding: 2.5rem 1rem;
+      padding: 2.5rem 2.5rem;
       border-radius: 0;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0;
+    }
+    .popup .free-test__stroke-input {
+      font-size: 1.8rem;
+      padding: 1.2rem 1.5rem 1.2rem
+    }
+    .popup .free-test__stroke-title {
+      font-size: 2.2rem;
     }
     .popup .free-test__form {
       width: 100%;
@@ -899,11 +906,19 @@
       .how-its-work__imgs {
         grid-template-columns: repeat(1, 1fr);
       }
+      .how-its-work__imgs ul {
+        display: block;
+        margin-top: 0;
+      }
       .how-its-work__imgs img {
         margin: 0 !important;
       }
       .how-its-work__integration-img img {
         width: 100%;
+      }
+
+      .how-its-work__checkpoints-wrap .how-its-work__checkpoints .how-its-work__checkpoint:first-child {
+        display: none;
       }
       
       .how-its-work__checkpoint-count {

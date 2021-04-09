@@ -147,6 +147,8 @@ body {
   display: inline-block;
   color: #000;
   font-family: Alselm;
+  background-color: transparent;
+  border: 1px solid #1171C9;
 }
 /*/ Select */
 
@@ -298,6 +300,9 @@ body {
   margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.how-its-work__imgs ul {
+  display: none;
 }
 .how-its-work__imgs img {
   width: 100%;
@@ -889,7 +894,7 @@ p.price__list-item-text {
 }
 .footer__social-list {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .footer__social-list-item {
   margin: 0 .6rem;
@@ -905,6 +910,10 @@ p.price__list-item-text {
   font-size: 1.5rem;
   line-height: 2.3rem;
   color: #3F88BB;
+}
+.footer__social-list-item img {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
 }
 /*/ Footer */
 
