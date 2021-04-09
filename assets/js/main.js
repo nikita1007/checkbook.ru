@@ -2,6 +2,7 @@ function main() {
   menuToggle()
   popup()
   select()
+  animateBlocks()
 } main()
 
 // Menu Toggle
@@ -11,7 +12,7 @@ function menuToggle() {
     menuBtn.addEventListener('click', ()=> {
       if (menuBtn.classList.contains('navigation__btn--active')) {
         menuBtn.classList.remove('navigation__btn--active')
-        navMenu.style.cssText = `right: -100%`
+        navMenu.style.cssText = `right: -115%`
         menuBtn.children[1].style.cssText = `width: 75%;`
         for (let i = 0; i < menuBtn.children.length; i++) {
           menuBtn.children[i].style.cssText += `
@@ -110,10 +111,19 @@ function select() {
       selectSingle.setAttribute('data-state', '');
     });
   }
+}
 
-  // Reset title
-  const reset = document.querySelector('.reset');
-  reset.addEventListener('click', () => {
-    selectSingle_title.textContent = selectSingle_title.getAttribute('data-default');
-  });
+// Animations 
+function animateBlocks() {
+  window.addEventListener('scroll', () => {
+    console.log(document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight);
+    if (document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight <= 0 && window.innerWidth >= 768) {
+      document.querySelector('.decision__img').style.cssText = `opacity: 1;left: 0;`
+      return
+    }
+    if (document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight <= 300 && window.innerWidth <= 768) {
+      document.querySelector('.decision__img').style.cssText = `opacity: 1;left: 0;`
+      return
+    }
+  })
 }

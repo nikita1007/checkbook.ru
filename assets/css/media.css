@@ -24,7 +24,7 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -115%;
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
