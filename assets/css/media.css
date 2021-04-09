@@ -585,6 +585,12 @@
         }
       /*/ Feedback */
   /*/ Main */
+  /* Popup */
+    .free-test__form-title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  /*/ Popup */
 }
 @media (max-width: 550px) {
   /* Secondary */
