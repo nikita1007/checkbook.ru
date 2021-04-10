@@ -82,10 +82,12 @@ function popup() {
   popupOpenBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       popupWrap.style.cssText = `display: block;`
+      document.querySelector('.page').style.cssText = `height: 100vh;`
     })
   })
   popupCloseBtn.addEventListener('click', () => {
     popupWrap.style.cssText = `display: none;`
+    document.querySelector('.page').style.cssText = `height: unset;`
   })
 }
 
