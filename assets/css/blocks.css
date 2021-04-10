@@ -301,11 +301,11 @@ body {
   z-index: 2;
   left: 20rem;
   opacity: 0;
-  transition: .8s ease-in-out;
-  -webkit-transition: .8s ease-in-out;
-  -moz-transition: .8s ease-in-out;
-  -ms-transition: .8s ease-in-out;
-  -o-transition: .8s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
 }
 .decision__img-wrap::before {
   content: '';
