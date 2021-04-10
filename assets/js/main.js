@@ -118,14 +118,33 @@ function select() {
 // Animations 
 function animateBlocks() {
   window.addEventListener('scroll', () => {
-    console.log(document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight);
     if (document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight <= 0 && window.innerWidth >= 768) {
       document.querySelector('.decision__img').style.cssText = `opacity: 1;left: 0;`
-      return
     }
     if (document.querySelector('.decision__img-wrap').getBoundingClientRect().y - document.querySelector('.decision__img-wrap').offsetHeight <= 300 && window.innerWidth <= 768) {
       document.querySelector('.decision__img').style.cssText = `opacity: 1;left: 0;`
-      return
     }
+    document.querySelectorAll('.anim-backInLeft').forEach(element => {
+      if (element.getBoundingClientRect().y - window.innerHeight <= 0) {
+        element.style.cssText = `opacity: 1;left: 0;right: 0;transform: translate(0%);`
+      }
+    });  
+    document.querySelectorAll('.anim-backInRight').forEach(element => {
+      if (element.getBoundingClientRect().y - window.innerHeight <= 0) {
+        element.style.cssText = `opacity: 1;left: 0;right: 0;transform: translate(0%);`
+      }
+    });  
+  })
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.anim-backInLeft').forEach(element => {
+      if (element.getBoundingClientRect().y - window.innerHeight <= 0) {
+        element.style.cssText = `opacity: 1;left: 0;right: 0;transform: translate(0%);`
+      }
+    });
+    document.querySelectorAll('.anim-backInRight').forEach(element => {
+      if (element.getBoundingClientRect().y - window.innerHeight <= 0) {
+        element.style.cssText = `opacity: 1;left: 0;right: 0;transform: translate(0%);`
+      }
+    }); 
   })
 }
