@@ -893,7 +893,7 @@
 
   .header__bottom-inner-background {
     left: -5em;
-    top: 12.5rem;
+    top: 11rem;
     width: 120%;
     transform: scale(1.85);
     -webkit-transform: scale(1.85);
@@ -1077,7 +1077,7 @@
 
   .header__bottom-inner-background {
     left: -5em;
-    top: 13rem;
+    top: 15rem;
     width: 120%;
     transform: scale(2);
     -webkit-transform: scale(2);
