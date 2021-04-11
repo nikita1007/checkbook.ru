@@ -893,14 +893,14 @@
 
   .header__bottom-inner-background {
     left: -5em;
-    top: 4rem;
+    top: 12.5rem;
     width: 120%;
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-  }
+    transform: scale(1.85);
+    -webkit-transform: scale(1.85);
+    -moz-transform: scale(1.85);
+    -ms-transform: scale(1.85);
+    -o-transform: scale(1.85);
+}
   /*/ Header */
 
   /* Main */

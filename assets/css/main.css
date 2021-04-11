@@ -23,11 +23,11 @@
   position: relative;
   z-index: 100;
 }
-.header .site-logo {
+.site-logo {
   max-width: 8.5rem;
   max-height: 4.5rem;
 }
-.header .site-logo img {
+.site-logo img {
   width: 100%;
   height: 100%;
 }
