@@ -277,10 +277,10 @@ body {
   background-position: center 0px;
 }
 .decision__about-item-icon-1 {
-  background-position-y: 0;
+  background-position-y: -12.5rem;
 }
 .decision__about-item-icon-2 {
-  background-position-y: -12.5rem;
+  background-position-y: 0;
 }
 .decision__about-item-icon-3 {
   background-position-y: -25rem;
