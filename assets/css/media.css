@@ -624,7 +624,7 @@
     font-size: 2.6rem;
     line-height: 3.6rem;
   }
-  .header__bottom-inner::before {
+  .header__bottom-inner-background {
     left: -1.5rem;
     height: 82.5%;
     width: 120%;
