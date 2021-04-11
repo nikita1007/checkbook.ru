@@ -890,6 +890,17 @@
     font-size: 2.2rem;
     line-height: 3.2rem;
   }
+
+  .header__bottom-inner-background {
+    left: -5em;
+    top: 4rem;
+    width: 120%;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
   /*/ Header */
 
   /* Main */
@@ -1063,6 +1074,17 @@
   .header .nav {
     width: 100vw;
   }
+
+  .header__bottom-inner-background {
+    left: -5em;
+    top: 13rem;
+    width: 120%;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
   /*/ Header */
 
   /* Main */
@@ -1142,6 +1164,17 @@
   .header .nav {
     width: 100vw;
   }
+
+  .header__bottom-inner-background {
+    left: -5em;
+    top: 38rem;
+    width: 120%;
+    transform: scale(2.9);
+    -webkit-transform: scale(2.9);
+    -moz-transform: scale(2.9);
+    -ms-transform: scale(2.9);
+    -o-transform: scale(2.9);
+}
   /*/ Header */
 
   /* Main */
