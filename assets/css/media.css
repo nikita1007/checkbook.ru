@@ -626,15 +626,15 @@
   }
   .header__bottom-inner-background {
     left: -5em;
-    top: 21rem;
+    top: 1.5rem;
     width: 120%;
-    transform: scale(2);
-    -webkit-transform: scale(2.2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
   }
-  
+
   .header .nav {
     width: 75vw;
   }
@@ -893,13 +893,13 @@
 
   .header__bottom-inner-background {
     left: -5em;
-    top: 12.5rem;
+    top: 20rem;
     width: 120%;
-    transform: scale(1.85);
-    -webkit-transform: scale(1.85);
-    -moz-transform: scale(1.85);
-    -ms-transform: scale(1.85);
-    -o-transform: scale(1.85);
+    transform: scale(2);
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
 }
   /*/ Header */
 
@@ -1077,10 +1077,10 @@
 
   .header__bottom-inner-background {
     left: -5em;
-    top: 13rem;
+    top: 25rem;
     width: 120%;
     transform: scale(2);
-    -webkit-transform: scale(2);
+    -webkit-transform: scale(2.5);
     -moz-transform: scale(2);
     -ms-transform: scale(2);
     -o-transform: scale(2);
