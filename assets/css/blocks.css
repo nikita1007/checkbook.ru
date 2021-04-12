@@ -512,6 +512,9 @@ body {
   align-items: center;
   margin-top: 1rem;
 }
+.price__list-item-img {
+  background-size: cover;
+}
 p.price__list-item-text {
   max-width: 22rem;
   font-size: 2rem;
