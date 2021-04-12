@@ -805,6 +805,7 @@ p.price__list-item-text {
   min-height: 7.2rem;
   max-width: 8rem;
   max-height: 7.2rem;
+  background-size: cover;
 }
 
 .create__img-wrap {
