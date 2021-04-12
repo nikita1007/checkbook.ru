@@ -275,6 +275,7 @@ body {
   min-height: 10rem;
   background-image: url(../images/icons/computer-mail-purse.png);
   background-position: center 0px;
+  background-size: cover;
 }
 .decision__about-item-icon-1 {
   background-position-y: -12.5rem;
