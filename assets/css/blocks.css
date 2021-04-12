@@ -928,6 +928,10 @@ p.price__list-item-text {
   max-width: 10.5rem;
   max-height: 10.5rem;
 }
+.statistic__block-img img {
+  width: 80%;
+  height: auto;
+}
 .statistic__block-text {
   font-size: 2rem;
   max-width: 22rem;
@@ -962,6 +966,7 @@ p.price__list-item-text {
 }
 .feedback__list-item-img {
   background-position: center;
+  background-size: cover;
   min-width: 6rem;
   max-width: 6rem;
   min-height: 7.5rem;
